@@ -3,12 +3,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { LoadingController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { LoadingControllerMocks } from '../../../testing/loading.controller.mocks';
-import { VolumesServiceMocks } from '../../../testing/volumes.service.mocks';
-import { VolumesService } from '../../volumes.service';
-import { LibraryPageModule } from '../library.module';
-
-import { PublishersPage } from './publishers.page';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { PublishersPage } from 'src/app/library/publishers/publishers.page';
+import { VolumesService } from 'src/app/volumes.service';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { VolumesServiceMocks } from 'src/testing/volumes.service.mocks';
 
 let component: PublishersPage;
 let fixture: ComponentFixture<PublishersPage>;

@@ -1,10 +1,9 @@
 import { HttpTestingController, HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { ComicFixtures } from '../testing/comic.fixtures';
-import { ThumbnailFixtures } from '../testing/thumbnail.fixtures';
-
-import { ThumbnailsService } from './thumbnails.service';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ThumbnailFixtures } from 'src/testing/thumbnail.fixtures';
 
 let service: ThumbnailsService;
 let httpMock: HttpTestingController;

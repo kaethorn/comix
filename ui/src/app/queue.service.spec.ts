@@ -1,14 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { of, throwError } from 'rxjs';
 
-import { ComicDatabaseServiceMocks } from '../testing/comic-database.service.mocks';
-import { ComicFixtures } from '../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../testing/comics.service.mocks';
-
-import { Comic } from './comic';
-import { ComicDatabaseService } from './comic-database.service';
-import { ComicsService } from './comics.service';
-import { QueueService } from './queue.service';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
+import { QueueService } from 'src/app/queue.service';
+import { ComicDatabaseServiceMocks } from 'src/testing/comic-database.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
 
 let service: QueueService;
 let comicDatabaseService: jasmine.SpyObj<ComicDatabaseService>;

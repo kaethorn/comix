@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 
-import { CACHES_TOKEN } from './caches.token';
+import { CACHES_TOKEN } from 'src/app/caches.token';
 
 @Injectable({
   providedIn: 'root'

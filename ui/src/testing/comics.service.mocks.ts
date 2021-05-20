@@ -1,8 +1,7 @@
 import { of } from 'rxjs';
 
-import { ComicsService } from '../app/comics.service';
-
-import { ComicFixtures } from './comic.fixtures';
+import { ComicsService } from 'src/app/comics.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
 
 export class ComicsServiceMocks {
 

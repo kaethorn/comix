@@ -6,7 +6,7 @@ import { AlertController } from '@ionic/angular';
 import { interval, concat } from 'rxjs';
 import { first } from 'rxjs/operators';
 
-import { LOCATION_TOKEN } from './location.token';
+import { LOCATION_TOKEN } from 'src/app/location.token';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +37,7 @@ export class UpdateService {
   }
 
   private checkForUpdates(): void {
-    const appIsStable$ = this.appRef.isStable.pipe(first(isStable => isStable === true));
+    const appIsStable$ = this.appRef.isStable.pipe(first(isStable => isStable));
     const everySixHours$ = interval(6 * 60 * 60 * 1000);
     const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
 

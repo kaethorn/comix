@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PopoverController, NavParams } from '@ionic/angular';
 
-import { Volume } from '../../../volume';
-import { VolumesService } from '../../../volumes.service';
+import { Volume } from 'src/app/volume';
+import { VolumesService } from 'src/app/volumes.service';
 
 @Component({
   selector: 'app-volume-actions',

@@ -1,7 +1,7 @@
 import { Component, NgZone } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { UserService } from '../user.service';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-login',

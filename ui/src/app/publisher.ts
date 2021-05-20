@@ -1,4 +1,4 @@
-import { Series } from './series';
+import { Series } from 'src/app/series';
 
 export interface Publisher {
   name: string;

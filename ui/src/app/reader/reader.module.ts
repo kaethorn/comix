@@ -4,9 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-import { SecureModule } from '../secure/secure.module';
-
-import { ReaderPage } from './reader.page';
+import { ReaderPage } from 'src/app/reader/reader.page';
+import { SecureModule } from 'src/app/secure/secure.module';
 
 @NgModule({
   declarations: [

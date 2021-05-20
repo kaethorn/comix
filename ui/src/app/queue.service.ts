@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { Observable, from } from 'rxjs';
 import { concatMap, flatMap } from 'rxjs/operators';
 
-import { Comic } from './comic';
-import { ComicDatabaseService } from './comic-database.service';
-import { ComicsService } from './comics.service';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
 
 @Injectable({
   providedIn: 'root'

@@ -6,11 +6,10 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { MomentModule } from 'ngx-moment';
 
-import { EditPage } from '../library/edit/edit.page';
-
-import { QueuePage } from './queue/queue.page';
-import { ScannerComponent } from './scanner/scanner.component';
-import { SettingsPage } from './settings.page';
+import { EditPage } from 'src/app/library/edit/edit.page';
+import { QueuePage } from 'src/app/settings/queue/queue.page';
+import { ScannerComponent } from 'src/app/settings/scanner/scanner.component';
+import { SettingsPage } from 'src/app/settings/settings.page';
 
 @NgModule({
   declarations: [

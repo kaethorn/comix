@@ -4,11 +4,10 @@ import { TestBed } from '@angular/core/testing';
 import { SwUpdate } from '@angular/service-worker';
 import { AlertController } from '@ionic/angular';
 
-import { AlertControllerMocks } from '../testing/alert.controller.mocks';
-import { SwUpdateMocks } from '../testing/swupdate.mocks';
-
-import { LOCATION_TOKEN } from './location.token';
-import { UpdateService } from './update.service';
+import { LOCATION_TOKEN } from 'src/app/location.token';
+import { UpdateService } from 'src/app/update.service';
+import { AlertControllerMocks } from 'src/testing/alert.controller.mocks';
+import { SwUpdateMocks } from 'src/testing/swupdate.mocks';
 
 let service: UpdateService;
 let swUpdate: jasmine.SpyObj<SwUpdate>;

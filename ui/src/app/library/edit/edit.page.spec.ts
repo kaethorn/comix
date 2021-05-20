@@ -3,13 +3,12 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ToastController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { ComicsServiceMocks } from '../../../testing/comics.service.mocks';
-import { ToastControllerMocks } from '../../../testing/toast.controller.mocks';
-import { Comic } from '../../comic';
-import { ComicsService } from '../../comics.service';
-import { LibraryPageModule } from '../library.module';
-
-import { EditPage } from './edit.page';
+import { Comic } from 'src/app/comic';
+import { ComicsService } from 'src/app/comics.service';
+import { EditPage } from 'src/app/library/edit/edit.page';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
 
 let component: EditPage;
 let fixture: ComponentFixture<EditPage>;

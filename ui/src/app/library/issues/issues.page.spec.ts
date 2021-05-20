@@ -3,21 +3,20 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ToastController, PopoverController, LoadingController } from '@ionic/angular';
 import { of, throwError } from 'rxjs';
 
-import { ComicStorageServiceMocks } from '../../../testing/comic-storage.service.mocks';
-import { ComicFixtures } from '../../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../../testing/comics.service.mocks';
-import { LoadingControllerMocks } from '../../../testing/loading.controller.mocks';
-import { PopoverControllerMocks } from '../../../testing/popover.controller.mocks';
-import { ThumbnailsServiceMocks } from '../../../testing/thumbnails.service.mocks';
-import { ToastControllerMocks } from '../../../testing/toast.controller.mocks';
-import { VolumesServiceMocks } from '../../../testing/volumes.service.mocks';
-import { ComicStorageService } from '../../comic-storage.service';
-import { ComicsService } from '../../comics.service';
-import { ThumbnailsService } from '../../thumbnails.service';
-import { VolumesService } from '../../volumes.service';
-import { LibraryPageModule } from '../library.module';
-
-import { IssuesPage } from './issues.page';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { ComicsService } from 'src/app/comics.service';
+import { IssuesPage } from 'src/app/library/issues/issues.page';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { VolumesService } from 'src/app/volumes.service';
+import { ComicStorageServiceMocks } from 'src/testing/comic-storage.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
+import { ThumbnailsServiceMocks } from 'src/testing/thumbnails.service.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
+import { VolumesServiceMocks } from 'src/testing/volumes.service.mocks';
 
 let component: IssuesPage;
 let fixture: ComponentFixture<IssuesPage>;

@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-import { SecureModule } from '../secure/secure.module';
-
-import { BookmarkActionsComponent } from './bookmark-actions/bookmark-actions.component';
-import { BookmarksPage } from './bookmarks.page';
+import { BookmarkActionsComponent } from 'src/app/bookmarks/bookmark-actions/bookmark-actions.component';
+import { BookmarksPage } from 'src/app/bookmarks/bookmarks.page';
+import { SecureModule } from 'src/app/secure/secure.module';
 
 @NgModule({
   declarations: [

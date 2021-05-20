@@ -2,11 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { NavParams, PopoverController } from '@ionic/angular';
 
-import { ComicFixtures } from '../../../../testing/comic.fixtures';
-import { PopoverControllerMocks } from '../../../../testing/popover.controller.mocks';
-import { LibraryPageModule } from '../../library.module';
-
-import { IssueActionsComponent } from './issue-actions.component';
+import { IssueActionsComponent } from 'src/app/library/issues/issue-actions/issue-actions.component';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
 
 let component: IssueActionsComponent;
 let fixture: ComponentFixture<IssueActionsComponent>;
@@ -33,7 +32,6 @@ describe('IssueActionsComponent', () => {
         provide: PopoverController, useValue: popoverController
       }]
     });
-    router = TestBed.get(Router);
     fixture = TestBed.createComponent(IssueActionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

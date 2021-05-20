@@ -1,4 +1,4 @@
-import { User } from '../app/user';
+import { User } from 'src/app/user';
 
 export class UserFixtures {
 

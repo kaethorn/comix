@@ -29,17 +29,6 @@ module.exports = {
   'guard-for-in': 'error',
   'id-blacklist': 'off',
   'id-match': 'off',
-  'import/no-deprecated': 'warn',
-  'import/no-duplicates': 'error',
-  'import/order': [
-    'error',
-    {
-      alphabetize: {
-        order: 'asc'
-      },
-      'newlines-between': 'always'
-    }
-  ],
   indent: [
     'error',
     2,
@@ -99,10 +88,7 @@ module.exports = {
   'no-redeclare': 'error',
   'no-regex-spaces': 'error',
   'no-restricted-globals': [ 'error', 'fit', 'fdescribe' ],
-  'no-restricted-imports': [
-    'error',
-    'rxjs/Rx'
-  ],
+  'no-restricted-imports': [ 'error', { patterns: [ '../*' ] }],
   'no-return-await': 'error',
   'no-self-assign': 'error',
   'no-shadow-restricted-names': 'error',
@@ -165,5 +151,17 @@ module.exports = {
   'switch-colon-spacing': 'error',
   'template-curly-spacing': [ 'error', 'always' ],
   'use-isnan': 'error',
-  'valid-typeof': 'error'
+  'valid-typeof': 'error',
+  'import/no-deprecated': 'warn',
+  'import/no-duplicates': 'error',
+  'import/order': [
+    'error',
+    {
+      alphabetize: {
+        order: 'asc'
+      },
+      groups: [ 'builtin', 'external', 'internal', [ 'index', 'sibling', 'parent', 'object', 'type' ]],
+      'newlines-between': 'always'
+    }
+  ]
 };

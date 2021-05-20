@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { Comic, ScannerIssue } from './comic';
+import { Comic, ScannerIssue } from 'src/app/comic';
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,7 @@
 import { BehaviorSubject, of } from 'rxjs';
 
-import { UserService } from '../app/user.service';
-
-import { UserFixtures } from './user.fixtures';
+import { UserService } from 'src/app/user.service';
+import { UserFixtures } from 'src/testing/user.fixtures';
 
 export class UserServiceMocks {
 

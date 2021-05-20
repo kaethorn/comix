@@ -3,14 +3,13 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ToastController, LoadingController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { ComicFixtures } from '../../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../../testing/comics.service.mocks';
-import { LoadingControllerMocks } from '../../../testing/loading.controller.mocks';
-import { ToastControllerMocks } from '../../../testing/toast.controller.mocks';
-import { ComicsService } from '../../comics.service';
-import { SettingsPageModule } from '../settings.module';
-
-import { QueuePage } from './queue.page';
+import { ComicsService } from 'src/app/comics.service';
+import { QueuePage } from 'src/app/settings/queue/queue.page';
+import { SettingsPageModule } from 'src/app/settings/settings.module';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
 
 let component: QueuePage;
 let fixture: ComponentFixture<QueuePage>;

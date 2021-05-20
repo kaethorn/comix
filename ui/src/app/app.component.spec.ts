@@ -7,12 +7,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Platform } from '@ionic/angular';
 import { ReplaySubject } from 'rxjs';
 
-import { UserServiceMocks } from '../testing/user.service.mocks';
-
-import { AppComponent } from './app.component';
-import { LOCATION_TOKEN } from './location.token';
-import { UpdateService } from './update.service';
-import { UserService } from './user.service';
+import { AppComponent } from 'src/app/app.component';
+import { LOCATION_TOKEN } from 'src/app/location.token';
+import { UpdateService } from 'src/app/update.service';
+import { UserService } from 'src/app/user.service';
+import { UserServiceMocks } from 'src/testing/user.service.mocks';
 
 let statusBarSpy: any, splashScreenSpy: any, platformReadySpy: any, platformSpy: any;
 let component: AppComponent;

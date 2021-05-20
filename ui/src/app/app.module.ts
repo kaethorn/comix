@@ -8,13 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import Hammer from 'hammerjs';
 
-import { environment } from '../environments/environment';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AuthInterceptor } from './auth.interceptor';
-import { CACHES_TOKEN } from './caches.token';
-import { LOCATION_TOKEN } from './location.token';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppComponent } from 'src/app/app.component';
+import { AuthInterceptor } from 'src/app/auth.interceptor';
+import { CACHES_TOKEN } from 'src/app/caches.token';
+import { LOCATION_TOKEN } from 'src/app/location.token';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class HammerConfig extends HammerGestureConfig {

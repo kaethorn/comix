@@ -1,4 +1,4 @@
-import { browser, by, element, promise, ExpectedConditions, ElementFinder, WebElement } from 'protractor';
+import { browser, by, element, promise, ExpectedConditions, ElementFinder } from 'protractor';
 
 export class Page {
 

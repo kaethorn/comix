@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ToastController, LoadingController } from '@ionic/angular';
 
-import { Comic, ScannerIssue, ScannerIssueSeverity } from '../../comic';
-import { ComicsService } from '../../comics.service';
+import { Comic, ScannerIssue, ScannerIssueSeverity } from 'src/app/comic';
+import { ComicsService } from 'src/app/comics.service';
 
 @Component({
   selector: 'app-queue',

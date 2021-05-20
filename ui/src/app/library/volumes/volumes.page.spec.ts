@@ -4,20 +4,19 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { PopoverController, LoadingController } from '@ionic/angular';
 import { of, throwError } from 'rxjs';
 
-import { ComicFixtures } from '../../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../../testing/comics.service.mocks';
-import { LoadingControllerMocks } from '../../../testing/loading.controller.mocks';
-import { MockComponent } from '../../../testing/mock.component';
-import { PopoverControllerMocks } from '../../../testing/popover.controller.mocks';
-import { ThumbnailsServiceMocks } from '../../../testing/thumbnails.service.mocks';
-import { VolumeFixtures } from '../../../testing/volume.fixtures';
-import { VolumesServiceMocks } from '../../../testing/volumes.service.mocks';
-import { ComicsService } from '../../comics.service';
-import { ThumbnailsService } from '../../thumbnails.service';
-import { VolumesService } from '../../volumes.service';
-import { LibraryPageModule } from '../library.module';
-
-import { VolumesPage } from './volumes.page';
+import { ComicsService } from 'src/app/comics.service';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { VolumesPage } from 'src/app/library/volumes/volumes.page';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { VolumesService } from 'src/app/volumes.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { MockComponent } from 'src/testing/mock.component';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
+import { ThumbnailsServiceMocks } from 'src/testing/thumbnails.service.mocks';
+import { VolumeFixtures } from 'src/testing/volume.fixtures';
+import { VolumesServiceMocks } from 'src/testing/volumes.service.mocks';
 
 let component: VolumesPage;
 let fixture: ComponentFixture<VolumesPage>;
@@ -142,7 +141,7 @@ describe('VolumesPage', () => {
     describe('with a read volume', () => {
 
       beforeEach(async () => {
-        await fixture.ngZone.run(() => {
+        await fixture.ngZone?.run(() => {
           component.resumeVolume(Object.assign(VolumeFixtures.volume, { read: true }));
         });
       });
@@ -163,7 +162,7 @@ describe('VolumesPage', () => {
     describe('with an unread volume', () => {
 
       beforeEach(async () => {
-        await fixture.ngZone.run(() => {
+        await fixture.ngZone?.run(() => {
           component.resumeVolume(VolumeFixtures.volume);
         });
       });

@@ -3,22 +3,21 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ToastController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { ComicsServiceMocks } from '../../testing/comics.service.mocks';
-import { SettingFixtures } from '../../testing/setting.fixtures';
-import { SettingsServiceMocks } from '../../testing/settings.service.mocks';
-import { StatsServiceMocks } from '../../testing/stats.service.mocks';
-import { ToastControllerMocks } from '../../testing/toast.controller.mocks';
-import { UserServiceMocks } from '../../testing/user.service.mocks';
-import { ComicsService } from '../comics.service';
-import { LOCATION_TOKEN } from '../location.token';
-import { SettingsService } from '../settings.service';
-import { StatsService } from '../stats.service';
-import { User } from '../user';
-import { UserSettingsService } from '../user-settings.service';
-import { UserService } from '../user.service';
-
-import { SettingsPageModule } from './settings.module';
-import { SettingsPage } from './settings.page';
+import { ComicsService } from 'src/app/comics.service';
+import { LOCATION_TOKEN } from 'src/app/location.token';
+import { SettingsService } from 'src/app/settings.service';
+import { SettingsPageModule } from 'src/app/settings/settings.module';
+import { SettingsPage } from 'src/app/settings/settings.page';
+import { StatsService } from 'src/app/stats.service';
+import { User } from 'src/app/user';
+import { UserSettingsService } from 'src/app/user-settings.service';
+import { UserService } from 'src/app/user.service';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { SettingFixtures } from 'src/testing/setting.fixtures';
+import { SettingsServiceMocks } from 'src/testing/settings.service.mocks';
+import { StatsServiceMocks } from 'src/testing/stats.service.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
+import { UserServiceMocks } from 'src/testing/user.service.mocks';
 
 let component: SettingsPage;
 let fixture: ComponentFixture<SettingsPage>;
@@ -130,12 +129,12 @@ describe('SettingsPage', () => {
 
     it('saves user settings', () => {
       component.saveUserSettings();
-      expect(JSON.parse(localStorage.getItem('userSettings'))).toEqual({});
+      expect(JSON.parse(localStorage.getItem('userSettings') || '{}')).toEqual({});
 
       component.userSettings.darkMode = true;
       component.saveUserSettings();
 
-      expect(JSON.parse(localStorage.getItem('userSettings'))).toEqual({
+      expect(JSON.parse(localStorage.getItem('userSettings') || '{}')).toEqual({
         darkMode: true
       });
     });

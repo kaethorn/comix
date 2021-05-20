@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { UserSettingsService } from './user-settings.service';
+import { UserSettingsService } from 'src/app/user-settings.service';
 
 let service: UserSettingsService;
 
@@ -89,7 +89,7 @@ describe('UserSettingsService', () => {
       service.save();
 
       expect(localStorage.getItem('userSettings')).toBeDefined();
-      expect(JSON.parse(localStorage.getItem('userSettings')).foo).toEqual('bar');
+      expect(JSON.parse(localStorage.getItem('userSettings') || '{}').foo).toEqual('bar');
     });
   });
 });

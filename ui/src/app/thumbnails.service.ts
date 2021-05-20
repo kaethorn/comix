@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { Thumbnail } from './thumbnail';
+import { Thumbnail } from 'src/app/thumbnail';
 
 @Injectable({
   providedIn: 'root'

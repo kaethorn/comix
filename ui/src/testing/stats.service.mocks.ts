@@ -1,6 +1,6 @@
 import { of } from 'rxjs';
 
-import { StatsService } from '../app/stats.service';
+import { StatsService } from 'src/app/stats.service';
 
 export class StatsServiceMocks {
 

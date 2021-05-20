@@ -1,4 +1,4 @@
-import { Series } from '../app/series';
+import { Series } from 'src/app/series';
 
 export class SeriesFixtures {
 

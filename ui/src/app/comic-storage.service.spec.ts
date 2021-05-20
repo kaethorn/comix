@@ -1,18 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { throwError } from 'rxjs';
 
-import { ComicDatabaseServiceMocks } from '../testing/comic-database.service.mocks';
-import { ComicFixtures } from '../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../testing/comics.service.mocks';
-import { QueueServiceMocks } from '../testing/queue.service.mocks';
-import { ThumbnailsServiceMocks } from '../testing/thumbnails.service.mocks';
-
-import { Comic } from './comic';
-import { ComicDatabaseService } from './comic-database.service';
-import { ComicStorageService } from './comic-storage.service';
-import { ComicsService } from './comics.service';
-import { QueueService } from './queue.service';
-import { ThumbnailsService } from './thumbnails.service';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { ComicsService } from 'src/app/comics.service';
+import { QueueService } from 'src/app/queue.service';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { ComicDatabaseServiceMocks } from 'src/testing/comic-database.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { QueueServiceMocks } from 'src/testing/queue.service.mocks';
+import { ThumbnailsServiceMocks } from 'src/testing/thumbnails.service.mocks';
 
 let service: ComicStorageService;
 let comicDatabaseService: jasmine.SpyObj<ComicDatabaseService>;

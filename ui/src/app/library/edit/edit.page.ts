@@ -3,8 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
-import { Comic } from '../../comic';
-import { ComicsService } from '../../comics.service';
+import { Comic } from 'src/app/comic';
+import { ComicsService } from 'src/app/comics.service';
 
 @Component({
   selector: 'app-edit',

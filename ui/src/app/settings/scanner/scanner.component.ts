@@ -1,11 +1,11 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import * as moment from 'moment';
 
-import { Comic, ScannerIssue } from '../../comic';
-import { ComicDatabaseService } from '../../comic-database.service';
-import { ComicsService } from '../../comics.service';
-import { Stats } from '../../stats';
-import { StatsService } from '../../stats.service';
+import { Comic, ScannerIssue } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
+import { Stats } from 'src/app/stats';
+import { StatsService } from 'src/app/stats.service';
 
 @Component({
   selector: 'app-scanner',

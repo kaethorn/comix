@@ -1,10 +1,9 @@
 import { of } from 'rxjs';
 
-import { VolumesService } from '../app/volumes.service';
-
-import { PublisherFixtures } from './publisher.fixtures';
-import { SeriesFixtures } from './series.fixtures';
-import { VolumeFixtures } from './volume.fixtures';
+import { VolumesService } from 'src/app/volumes.service';
+import { PublisherFixtures } from 'src/testing/publisher.fixtures';
+import { SeriesFixtures } from 'src/testing/series.fixtures';
+import { VolumeFixtures } from 'src/testing/volume.fixtures';
 
 export class VolumesServiceMocks {
 

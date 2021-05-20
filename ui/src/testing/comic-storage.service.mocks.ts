@@ -1,6 +1,5 @@
-import { ComicStorageService } from '../app/comic-storage.service';
-
-import { ComicFixtures } from './comic.fixtures';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
 
 export class ComicStorageServiceMocks {
 

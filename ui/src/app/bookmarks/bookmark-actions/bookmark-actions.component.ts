@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PopoverController, NavParams } from '@ionic/angular';
 
-import { Comic } from '../../comic';
+import { Comic } from 'src/app/comic';
 
 @Component({
   selector: 'app-bookmark-actions',

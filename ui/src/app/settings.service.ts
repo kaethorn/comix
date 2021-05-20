@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { Setting } from './setting';
+import { Setting } from 'src/app/setting';
 
 @Injectable({
   providedIn: 'root'

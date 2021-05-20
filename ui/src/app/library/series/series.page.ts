@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 
-import { Series } from '../../series';
-import { VolumesService } from '../../volumes.service';
+import { Series } from 'src/app/series';
+import { VolumesService } from 'src/app/volumes.service';
 
 @Component({
   selector: 'app-series',

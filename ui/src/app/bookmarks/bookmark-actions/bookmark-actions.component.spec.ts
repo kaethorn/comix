@@ -3,11 +3,10 @@ import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NavParams, PopoverController } from '@ionic/angular';
 
-import { ComicFixtures } from '../../../testing/comic.fixtures';
-import { PopoverControllerMocks } from '../../../testing/popover.controller.mocks';
-import { BookmarksPageModule } from '../bookmarks.module';
-
-import { BookmarkActionsComponent } from './bookmark-actions.component';
+import { BookmarkActionsComponent } from 'src/app/bookmarks/bookmark-actions/bookmark-actions.component';
+import { BookmarksPageModule } from 'src/app/bookmarks/bookmarks.module';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
 
 let component: BookmarkActionsComponent;
 let fixture: ComponentFixture<BookmarkActionsComponent>;

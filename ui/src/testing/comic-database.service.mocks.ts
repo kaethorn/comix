@@ -1,8 +1,7 @@
 import { of } from 'rxjs';
 
-import { ComicDatabaseService } from '../app/comic-database.service';
-
-import { ComicFixtures } from './comic.fixtures';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
 
 export class ComicDatabaseServiceMocks {
 

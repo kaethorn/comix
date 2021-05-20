@@ -2,11 +2,10 @@ import { HttpClientTestingModule, HttpTestingController, TestRequest } from '@an
 import { TestBed } from '@angular/core/testing';
 import { first } from 'rxjs/operators';
 
-import { SettingsServiceMocks } from '../testing/settings.service.mocks';
-
-import { SettingsService } from './settings.service';
-import { User } from './user';
-import { UserService } from './user.service';
+import { SettingsService } from 'src/app/settings.service';
+import { User } from 'src/app/user';
+import { UserService } from 'src/app/user.service';
+import { SettingsServiceMocks } from 'src/testing/settings.service.mocks';
 
 let service: UserService;
 let settingsService: jasmine.SpyObj<SettingsService>;

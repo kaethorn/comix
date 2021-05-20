@@ -1,13 +1,13 @@
 import { Component, Inject } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
-import { environment } from '../../environments/environment';
-import { LOCATION_TOKEN } from '../location.token';
-import { Setting } from '../setting';
-import { SettingsService } from '../settings.service';
-import { User } from '../user';
-import { UserSettingsService } from '../user-settings.service';
-import { UserService } from '../user.service';
+import { LOCATION_TOKEN } from 'src/app/location.token';
+import { Setting } from 'src/app/setting';
+import { SettingsService } from 'src/app/settings.service';
+import { User } from 'src/app/user';
+import { UserSettingsService } from 'src/app/user-settings.service';
+import { UserService } from 'src/app/user.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-settings',

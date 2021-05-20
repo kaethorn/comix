@@ -2,8 +2,8 @@ import { TestBed } from '@angular/core/testing';
 import { Router, ActivatedRouteSnapshot } from '@angular/router';
 import { of, throwError } from 'rxjs';
 
-import { AuthGuard } from './auth.guard';
-import { UserService } from './user.service';
+import { AuthGuard } from 'src/app/auth.guard';
+import { UserService } from 'src/app/user.service';
 
 const userService = {
   user: of({}),

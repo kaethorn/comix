@@ -1,4 +1,4 @@
-import { Volume } from '../app/volume';
+import { Volume } from 'src/app/volume';
 
 export class VolumeFixtures {
 

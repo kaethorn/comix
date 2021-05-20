@@ -1,10 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CacheStorageMocks } from '../testing/cache-storage.mocks';
-import { ComicFixtures } from '../testing/comic.fixtures';
-
-import { CacheStorageService } from './cache-storage.service';
-import { CACHES_TOKEN } from './caches.token';
+import { CacheStorageService } from 'src/app/cache-storage.service';
+import { CACHES_TOKEN } from 'src/app/caches.token';
+import { CacheStorageMocks } from 'src/testing/cache-storage.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
 
 let service: CacheStorageService;
 let caches: jasmine.SpyObj<CacheStorage>;

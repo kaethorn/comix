@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { Comic } from './comic';
-import { Publisher } from './publisher';
-import { Series } from './series';
-import { Volume } from './volume';
+import { Comic } from 'src/app/comic';
+import { Publisher } from 'src/app/publisher';
+import { Series } from 'src/app/series';
+import { Volume } from 'src/app/volume';
 
 @Injectable({
   providedIn: 'root'

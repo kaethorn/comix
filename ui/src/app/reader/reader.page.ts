@@ -2,9 +2,9 @@ import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastController, LoadingController } from '@ionic/angular';
 
-import { Comic } from '../comic';
-import { ComicStorageService } from '../comic-storage.service';
-import { NavigatorService, NavigationInstruction, AdjacentComic, PageSource } from '../navigator.service';
+import { Comic } from 'src/app/comic';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { AdjacentComic, NavigationInstruction, NavigatorService, PageSource } from 'src/app/navigator.service';
 
 interface IOpenOptions {
   showToast?: boolean;

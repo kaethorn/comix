@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-import { AuthGuard } from './auth.guard';
-import { BookmarksPageModule } from './bookmarks/bookmarks.module';
-import { LibraryPageModule } from './library/library.module';
-import { LoginPageModule } from './login/login.module';
-import { ReaderPageModule } from './reader/reader.module';
-import { SettingsPageModule } from './settings/settings.module';
+import { AuthGuard } from 'src/app/auth.guard';
+import { BookmarksPageModule } from 'src/app/bookmarks/bookmarks.module';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { LoginPageModule } from 'src/app/login/login.module';
+import { ReaderPageModule } from 'src/app/reader/reader.module';
+import { SettingsPageModule } from 'src/app/settings/settings.module';
 
 const routes: Routes = [{
   path: '',

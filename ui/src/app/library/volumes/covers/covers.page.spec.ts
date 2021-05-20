@@ -3,17 +3,16 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { LoadingController, ToastController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { ComicFixtures } from '../../../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../../../testing/comics.service.mocks';
-import { LoadingControllerMocks } from '../../../../testing/loading.controller.mocks';
-import { ThumbnailsServiceMocks } from '../../../../testing/thumbnails.service.mocks';
-import { ToastControllerMocks } from '../../../../testing/toast.controller.mocks';
-import { CacheStorageService } from '../../../cache-storage.service';
-import { ComicsService } from '../../../comics.service';
-import { ThumbnailsService } from '../../../thumbnails.service';
-import { LibraryPageModule } from '../../library.module';
-
-import { CoversPage } from './covers.page';
+import { CacheStorageService } from 'src/app/cache-storage.service';
+import { ComicsService } from 'src/app/comics.service';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { CoversPage } from 'src/app/library/volumes/covers/covers.page';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { ThumbnailsServiceMocks } from 'src/testing/thumbnails.service.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
 
 let component: CoversPage;
 let fixture: ComponentFixture<CoversPage>;

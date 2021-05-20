@@ -1,13 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { throwError } from 'rxjs';
 
-import { ComicFixtures } from '../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../testing/comics.service.mocks';
-import { IndexedDbServiceMocks } from '../testing/indexed-db.service.mocks';
-
-import { ComicDatabaseService } from './comic-database.service';
-import { ComicsService } from './comics.service';
-import { IndexedDbService } from './indexed-db.service';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
+import { IndexedDbService } from 'src/app/indexed-db.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { IndexedDbServiceMocks } from 'src/testing/indexed-db.service.mocks';
 
 let service: ComicDatabaseService;
 let comicsService: jasmine.SpyObj<ComicsService>;

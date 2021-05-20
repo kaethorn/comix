@@ -1,8 +1,7 @@
 import { of } from 'rxjs';
 
-import { QueueService } from '../app/queue.service';
-
-import { ComicFixtures } from './comic.fixtures';
+import { QueueService } from 'src/app/queue.service';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
 
 export class QueueServiceMocks {
 

@@ -4,14 +4,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ToastController, LoadingController } from '@ionic/angular';
 
-import { ComicStorageServiceMocks } from '../../testing/comic-storage.service.mocks';
-import { ComicFixtures } from '../../testing/comic.fixtures';
-import { LoadingControllerMocks } from '../../testing/loading.controller.mocks';
-import { ToastControllerMocks } from '../../testing/toast.controller.mocks';
-import { ComicStorageService } from '../comic-storage.service';
-
-import { ReaderPageModule } from './reader.module';
-import { ReaderPage } from './reader.page';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { ReaderPageModule } from 'src/app/reader/reader.module';
+import { ReaderPage } from 'src/app/reader/reader.page';
+import { ComicStorageServiceMocks } from 'src/testing/comic-storage.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
 
 let component: ReaderPage;
 let fixture: ComponentFixture<ReaderPage>;

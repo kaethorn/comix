@@ -1,8 +1,7 @@
 import { of } from 'rxjs';
 
-import { SettingsService } from '../app/settings.service';
-
-import { SettingFixtures } from './setting.fixtures';
+import { SettingsService } from 'src/app/settings.service';
+import { SettingFixtures } from 'src/testing/setting.fixtures';
 
 export class SettingsServiceMocks {
 

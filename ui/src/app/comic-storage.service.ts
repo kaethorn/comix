@@ -3,11 +3,11 @@ import { SafeUrl, DomSanitizer } from '@angular/platform-browser';
 import { from } from 'rxjs';
 import { groupBy, mergeMap, filter, toArray, map } from 'rxjs/operators';
 
-import { Comic } from './comic';
-import { ComicDatabaseService } from './comic-database.service';
-import { ComicsService } from './comics.service';
-import { QueueService } from './queue.service';
-import { ThumbnailsService } from './thumbnails.service';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
+import { QueueService } from 'src/app/queue.service';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
 
 export interface StoredState {
   [name: string]: boolean;
@@ -29,7 +29,6 @@ export class ComicStorageService {
   /**
    * Retrieve the given comic from cache or from the server as a fallback.
    * @param comicId Comic ID to retrieve.
-   * @param cache Whether to cache the comic if not already done so.
    * @returns A promise returning the comic.
    */
   public get(comicId: string): Promise<Comic> {
@@ -47,7 +46,6 @@ export class ComicStorageService {
   /**
    * Marks the given page of this comic as read.
    * @param comic The comic to store
-   * @param page Page number
    * @returns A Promise that resolved when finished.
    */
   public async saveProgress(comic: Comic): Promise<Event> {
@@ -65,6 +63,7 @@ export class ComicStorageService {
 
   /**
    * Retrieves the given page of this comic, without setting the read state.
+   * @param comicId The comic ID
    * @param page Page number
    * @returns The URL to the image.
    */
@@ -176,7 +175,7 @@ export class ComicStorageService {
 
   /**
    * Deletes all stored comics in the given comic's volume.
-   * @param comic Reference comic.
+   * @param referenceComic Reference comic.
    */
   public async deleteVolume(referenceComic: Comic): Promise<void> {
     const comics = await this.comicDatabaseService.getComics();

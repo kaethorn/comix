@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
 import { PopoverController, ToastController, LoadingController } from '@ionic/angular';
 
-import { Comic } from '../comic';
-import { ComicDatabaseService } from '../comic-database.service';
-import { ComicStorageService, StoredState } from '../comic-storage.service';
-
-import { BookmarkActionsComponent } from './bookmark-actions/bookmark-actions.component';
+import { BookmarkActionsComponent } from 'src/app/bookmarks/bookmark-actions/bookmark-actions.component';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicStorageService, StoredState } from 'src/app/comic-storage.service';
 
 @Component({
   selector: 'app-bookmarks',

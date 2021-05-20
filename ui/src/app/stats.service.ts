@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { Stats } from './stats';
+import { Stats } from 'src/app/stats';
 
 @Injectable({
   providedIn: 'root'

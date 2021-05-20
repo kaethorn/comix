@@ -1,7 +1,7 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { SettingsService } from './settings.service';
+import { SettingsService } from 'src/app/settings.service';
 
 let service: SettingsService;
 let httpMock: HttpTestingController;

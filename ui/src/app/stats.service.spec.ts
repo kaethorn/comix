@@ -1,9 +1,8 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { StatsHttpMocks } from '../testing/stats.http.mocks';
-
-import { StatsService } from './stats.service';
+import { StatsService } from 'src/app/stats.service';
+import { StatsHttpMocks } from 'src/testing/stats.http.mocks';
 
 let service: StatsService;
 let httpMock: HttpTestingController;

@@ -1,6 +1,6 @@
 import { AsyncSubject } from 'rxjs';
 
-import { IndexedDbService } from '../app/indexed-db.service';
+import { IndexedDbService } from 'src/app/indexed-db.service';
 
 export class IndexedDbServiceMocks {
 

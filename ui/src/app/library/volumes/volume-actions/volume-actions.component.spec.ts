@@ -3,13 +3,12 @@ import { Router } from '@angular/router';
 import { NavParams, PopoverController } from '@ionic/angular';
 import { throwError } from 'rxjs';
 
-import { PopoverControllerMocks } from '../../../../testing/popover.controller.mocks';
-import { VolumeFixtures } from '../../../../testing/volume.fixtures';
-import { VolumesServiceMocks } from '../../../../testing/volumes.service.mocks';
-import { VolumesService } from '../../../volumes.service';
-import { LibraryPageModule } from '../../library.module';
-
-import { VolumeActionsComponent } from './volume-actions.component';
+import { LibraryPageModule } from 'src/app/library/library.module';
+import { VolumeActionsComponent } from 'src/app/library/volumes/volume-actions/volume-actions.component';
+import { VolumesService } from 'src/app/volumes.service';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
+import { VolumeFixtures } from 'src/testing/volume.fixtures';
+import { VolumesServiceMocks } from 'src/testing/volumes.service.mocks';
 
 let component: VolumeActionsComponent;
 let fixture: ComponentFixture<VolumeActionsComponent>;

@@ -1,4 +1,4 @@
-import { Setting } from '../app/setting';
+import { Setting } from 'src/app/setting';
 
 export class SettingFixtures {
 

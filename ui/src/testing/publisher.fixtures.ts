@@ -1,6 +1,5 @@
-import { Publisher } from '../app/publisher';
-
-import { SeriesFixtures } from './series.fixtures';
+import { Publisher } from 'src/app/publisher';
+import { SeriesFixtures } from 'src/testing/series.fixtures';
 
 export class PublisherFixtures {
 

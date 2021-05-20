@@ -3,6 +3,7 @@
 /target/
 /logs
 /run-*.sh
+/boot.sh
 /bin/
 !gradle/wrapper/gradle-wrapper.jar
 /sample*

@@ -2,21 +2,20 @@ import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testin
 import { RouterTestingModule } from '@angular/router/testing';
 import { PopoverController, ToastController, LoadingController } from '@ionic/angular';
 
-import { ComicDatabaseServiceMocks } from '../../testing/comic-database.service.mocks';
-import { ComicStorageServiceMocks } from '../../testing/comic-storage.service.mocks';
-import { ComicFixtures } from '../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../testing/comics.service.mocks';
-import { LoadingControllerMocks } from '../../testing/loading.controller.mocks';
-import { PopoverControllerMocks } from '../../testing/popover.controller.mocks';
-import { ThumbnailsServiceMocks } from '../../testing/thumbnails.service.mocks';
-import { ToastControllerMocks } from '../../testing/toast.controller.mocks';
-import { ComicDatabaseService } from '../comic-database.service';
-import { ComicStorageService } from '../comic-storage.service';
-import { ComicsService } from '../comics.service';
-import { ThumbnailsService } from '../thumbnails.service';
-
-import { BookmarksPageModule } from './bookmarks.module';
-import { BookmarksPage } from './bookmarks.page';
+import { BookmarksPageModule } from 'src/app/bookmarks/bookmarks.module';
+import { BookmarksPage } from 'src/app/bookmarks/bookmarks.page';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicStorageService } from 'src/app/comic-storage.service';
+import { ComicsService } from 'src/app/comics.service';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
+import { ComicDatabaseServiceMocks } from 'src/testing/comic-database.service.mocks';
+import { ComicStorageServiceMocks } from 'src/testing/comic-storage.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { LoadingControllerMocks } from 'src/testing/loading.controller.mocks';
+import { PopoverControllerMocks } from 'src/testing/popover.controller.mocks';
+import { ThumbnailsServiceMocks } from 'src/testing/thumbnails.service.mocks';
+import { ToastControllerMocks } from 'src/testing/toast.controller.mocks';
 
 let component: BookmarksPage;
 let fixture: ComponentFixture<BookmarksPage>;

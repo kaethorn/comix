@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 
-import { Publisher } from '../../publisher';
-import { Series } from '../../series';
-import { VolumesService } from '../../volumes.service';
+import { Publisher } from 'src/app/publisher';
+import { Series } from 'src/app/series';
+import { VolumesService } from 'src/app/volumes.service';
 
 @Component({
   selector: 'app-publishers',

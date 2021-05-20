@@ -2,8 +2,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, NgZone } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-import { SettingsService } from './settings.service';
-import { User } from './user';
+import { SettingsService } from 'src/app/settings.service';
+import { User } from 'src/app/user';
 
 @Injectable({
   providedIn: 'root'
@@ -56,7 +56,7 @@ export class UserService {
             this.user.error('Login failure: Google-SignIn error.');
           });
 
-          if (this.auth2.isSignedIn.get() === true) {
+          if (this.auth2.isSignedIn.get()) {
             this.auth2.signIn();
           }
         });

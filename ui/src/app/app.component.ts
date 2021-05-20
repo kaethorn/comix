@@ -5,8 +5,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Platform } from '@ionic/angular';
 import { filter } from 'rxjs/operators';
 
-import { UpdateService } from './update.service';
-import { UserSettingsService } from './user-settings.service';
+import { UpdateService } from 'src/app/update.service';
+import { UserSettingsService } from 'src/app/user-settings.service';
 
 @Component({
   selector: 'app-root',

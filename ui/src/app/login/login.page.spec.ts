@@ -2,12 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { MockComponent } from '../..//testing/mock.component';
-import { UserServiceMocks } from '../../testing/user.service.mocks';
-import { UserService } from '../user.service';
-
-import { LoginPageModule } from './login.module';
-import { LoginPage } from './login.page';
+import { LoginPageModule } from 'src/app/login/login.module';
+import { LoginPage } from 'src/app/login/login.page';
+import { UserService } from 'src/app/user.service';
+import { MockComponent } from 'src/testing/mock.component';
+import { UserServiceMocks } from 'src/testing/user.service.mocks';
 
 let component: LoginPage;
 let fixture: ComponentFixture<LoginPage>;

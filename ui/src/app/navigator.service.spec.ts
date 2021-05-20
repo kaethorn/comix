@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NavigatorService, AdjacentComic } from './navigator.service';
+import { AdjacentComic, NavigatorService } from 'src/app/navigator.service';
 
 let service: NavigatorService;
 

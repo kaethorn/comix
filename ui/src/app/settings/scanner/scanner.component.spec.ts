@@ -1,16 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { ComicDatabaseServiceMocks } from '../../../testing/comic-database.service.mocks';
-import { ComicFixtures } from '../../../testing/comic.fixtures';
-import { ComicsServiceMocks } from '../../../testing/comics.service.mocks';
-import { StatsServiceMocks } from '../../../testing/stats.service.mocks';
-import { ComicDatabaseService } from '../../comic-database.service';
-import { ComicsService } from '../../comics.service';
-import { StatsService } from '../../stats.service';
-import { SettingsPageModule } from '../settings.module';
-
-import { ScannerComponent } from './scanner.component';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicsService } from 'src/app/comics.service';
+import { ScannerComponent } from 'src/app/settings/scanner/scanner.component';
+import { SettingsPageModule } from 'src/app/settings/settings.module';
+import { StatsService } from 'src/app/stats.service';
+import { ComicDatabaseServiceMocks } from 'src/testing/comic-database.service.mocks';
+import { ComicFixtures } from 'src/testing/comic.fixtures';
+import { ComicsServiceMocks } from 'src/testing/comics.service.mocks';
+import { StatsServiceMocks } from 'src/testing/stats.service.mocks';
 
 let component: ScannerComponent;
 let fixture: ComponentFixture<ScannerComponent>;
@@ -156,7 +155,9 @@ describe('ScannerComponent', () => {
     describe('on error', () => {
 
       beforeEach(() => {
-        component.scanProgress.onerror(new Event('error'));
+        if (component.scanProgress?.onerror) {
+          component.scanProgress.onerror(new Event('error'));
+        }
       });
 
       it('closes the scan', () => {

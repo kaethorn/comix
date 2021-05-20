@@ -1,4 +1,4 @@
-import { Thumbnail } from '../app/thumbnail';
+import { Thumbnail } from 'src/app/thumbnail';
 
 export class ThumbnailFixtures {
 

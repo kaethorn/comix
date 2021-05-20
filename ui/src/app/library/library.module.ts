@@ -5,14 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-import { EditPage } from './edit/edit.page';
-import { IssueActionsComponent } from './issues/issue-actions/issue-actions.component';
-import { IssuesPage } from './issues/issues.page';
-import { PublishersPage } from './publishers/publishers.page';
-import { SeriesPage } from './series/series.page';
-import { CoversPage } from './volumes/covers/covers.page';
-import { VolumeActionsComponent } from './volumes/volume-actions/volume-actions.component';
-import { VolumesPage } from './volumes/volumes.page';
+import { EditPage } from 'src/app/library/edit/edit.page';
+import { IssueActionsComponent } from 'src/app/library/issues/issue-actions/issue-actions.component';
+import { IssuesPage } from 'src/app/library/issues/issues.page';
+import { PublishersPage } from 'src/app/library/publishers/publishers.page';
+import { SeriesPage } from 'src/app/library/series/series.page';
+import { CoversPage } from 'src/app/library/volumes/covers/covers.page';
+import { VolumeActionsComponent } from 'src/app/library/volumes/volume-actions/volume-actions.component';
+import { VolumesPage } from 'src/app/library/volumes/volumes.page';
 
 @NgModule({
   declarations: [

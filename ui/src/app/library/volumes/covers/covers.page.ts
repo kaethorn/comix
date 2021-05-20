@@ -3,11 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { ToastController, LoadingController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 
-import { CacheStorageService } from '../../../cache-storage.service';
-import { Comic } from '../../../comic';
-import { ComicsService } from '../../../comics.service';
-import { Thumbnail } from '../../../thumbnail';
-import { ThumbnailsService } from '../../../thumbnails.service';
+import { CacheStorageService } from 'src/app/cache-storage.service';
+import { Comic } from 'src/app/comic';
+import { ComicsService } from 'src/app/comics.service';
+import { Thumbnail } from 'src/app/thumbnail';
+import { ThumbnailsService } from 'src/app/thumbnails.service';
 
 @Component({
   selector: 'app-covers',

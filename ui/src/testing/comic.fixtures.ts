@@ -1,4 +1,4 @@
-import { Comic, ScannerIssue, ScannerIssueType, ScannerIssueSeverity } from '../app/comic';
+import { Comic, ScannerIssue, ScannerIssueSeverity, ScannerIssueType } from 'src/app/comic';
 
 export class ComicFixtures {
 

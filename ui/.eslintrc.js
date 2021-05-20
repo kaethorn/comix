@@ -138,5 +138,8 @@ module.exports = {
         'no-undef': 'error'
       })
     }
-  ]
+  ],
+  settings: {
+    'import/internal-regex': '^src/'
+  }
 };

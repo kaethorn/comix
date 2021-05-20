@@ -3,14 +3,13 @@ import { SafeUrl } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PopoverController, LoadingController } from '@ionic/angular';
 
-import { Comic } from '../../comic';
-import { ComicDatabaseService } from '../../comic-database.service';
-import { StoredState, ComicStorageService } from '../../comic-storage.service';
-import { ComicsService } from '../../comics.service';
-import { Volume } from '../../volume';
-import { VolumesService } from '../../volumes.service';
-
-import { VolumeActionsComponent } from './volume-actions/volume-actions.component';
+import { Comic } from 'src/app/comic';
+import { ComicDatabaseService } from 'src/app/comic-database.service';
+import { ComicStorageService, StoredState } from 'src/app/comic-storage.service';
+import { ComicsService } from 'src/app/comics.service';
+import { VolumeActionsComponent } from 'src/app/library/volumes/volume-actions/volume-actions.component';
+import { Volume } from 'src/app/volume';
+import { VolumesService } from 'src/app/volumes.service';
 
 @Component({
   selector: 'app-volumes',
